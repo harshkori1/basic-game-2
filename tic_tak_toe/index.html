@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic-Tac-Toe Game</title>
+  <link rel="stylesheet" href="sty.css" />
+</head>
+<body>
+  <h1 id="ttt">TIC TAC TOE</h1>
+
+  <!-- Mode selector -->
+  <div class="mode-container">
+    <label for="mode">Choose Mode:</label>
+    <select id="mode">
+      <option value="player">Player vs Player</option>
+      <option value="computer">Player vs Computer</option>
+    </select>
+  </div>
+
+  <!-- Main Game Area -->
+  <main id="game-area">
+    <div class="container">
+      <div class="game">
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+      </div>
+    </div>
+
+    <button id="reset-btn">Reset Game</button>
+  </main>
+
+  <!-- Message for Winner/Draw -->
+  <div class="msg-container hide" id="msg-screen">
+    <p id="msg"></p>
+    <button id="new-btn">New Game</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
